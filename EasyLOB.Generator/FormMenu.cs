@@ -17,8 +17,8 @@ namespace EasyLOB.Generator
             lsbLog.Items.Clear();
 
             #if DEBUG
-            // EasyLOB-Generator\bin\Debug\..\..\..\EasyLOB-MyLOB-3
-            string templateDirectory = Path.Combine(Directory.GetParent(Path.Combine(exeDirectory, "..\\..\\..")).FullName, "EasyLOB-MyLOB-3");
+            // EasyLOB-Generator\bin\Debug\..\..\..\EasyLOB-MyLOB-NuGet-3
+            string templateDirectory = Path.Combine(Directory.GetParent(Path.Combine(exeDirectory, "..\\..\\..")).FullName, "EasyLOB-MyLOB-NuGet-3");
             #else
             // EasyLOB-Generator\..\EasyLOB-MyLOB-3
             string templateDirectory = Path.Combine(Directory.GetParent(exeDirectory).FullName, "EasyLOB-MyLOB-3");
