@@ -17,10 +17,10 @@ namespace EasyLOB.Generator
             lsbLog.Items.Clear();
 
             #if DEBUG
-            // EasyLOB-Generator\bin\Debug\..\..\..\EasyLOB-MyLOB-NuGet-3
+            // EasyLOB-Generator\bin\Debug\..\..\..\EasyLOB-Core-MyLOB-NuGet
             string templateDirectory = Path.Combine(Directory.GetParent(Path.Combine(exeDirectory, "..\\..\\..")).FullName, "EasyLOB-MyLOB-NuGet-3");
             #else
-            // EasyLOB-Generator\..\EasyLOB-MyLOB-3
+            // EasyLOB-Generator\..\EasyLOB-Core-MyLOB-NuGet
             string templateDirectory = Path.Combine(Directory.GetParent(exeDirectory).FullName, "EasyLOB-MyLOB-3");
             #endif
             if (Directory.Exists(templateDirectory))
@@ -31,7 +31,7 @@ namespace EasyLOB.Generator
 
         #region Properties
 
-        string exeName = "EasyLOB Generator";
+        string exeName = "EasyLOB Core Generator";
 
         string exePath = Application.ExecutablePath;
 
@@ -44,7 +44,7 @@ namespace EasyLOB.Generator
         private void lbllnkEasyLOB_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.lbllnkEasyLOB.LinkVisited = true;
-            System.Diagnostics.Process.Start("https://github.com/EasyLOB/EasyLOB-3/wiki");
+            System.Diagnostics.Process.Start("https://github.com/EasyLOB/EasyLOB-Core/wiki");
         }
 
         private void btnTemplateDirectory_Click(object sender, EventArgs e)
