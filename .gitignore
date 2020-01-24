@@ -69,7 +69,7 @@ artifacts/
 *.tlh
 *.tmp
 *.tmp_proj
-# *.log
+*.log
 *.vspscc
 *.vssscc
 .builds
@@ -162,6 +162,8 @@ publish/
 # NuGet v3's project.json files produces more ignoreable files
 *.nuget.props
 *.nuget.targets
+# packages symlink
+packages
 
 # npm Packages
 **/node_modules/
