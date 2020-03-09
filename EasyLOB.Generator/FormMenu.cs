@@ -102,12 +102,12 @@ namespace EasyLOB.Generator
                 string applicationName = txtApplicationName.Text;
 
                 bool ok = true;
-                if (String.IsNullOrEmpty(templateDirectory))
+                if (string.IsNullOrEmpty(templateDirectory))
                 {
                     ok = false;
                     messages.Add("\"Template Directory\" is required");
                 }
-                if (String.IsNullOrEmpty(solutionDirectory))
+                if (string.IsNullOrEmpty(solutionDirectory))
                 {
                     ok = false;
                     messages.Add("\"Solution Directory\" is required");
@@ -117,7 +117,7 @@ namespace EasyLOB.Generator
                     ok = false;
                     messages.Add("\"Solution Directory\" exists: PLEASE DELETE IT !");
                 }
-                if (String.IsNullOrEmpty(applicationName))
+                if (string.IsNullOrEmpty(applicationName))
                 {
                     ok = false;
                     messages.Add("\"Application Name\" is required");
