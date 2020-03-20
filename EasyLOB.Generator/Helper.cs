@@ -154,7 +154,7 @@ namespace EasyLOB.Generator
                     foreach (string files in Directory.GetFiles(directory))
                     {
                         FileInfo fileInfo = new FileInfo(files);
-                        if (".asax|.cs|.cshtml|.csproj|.config|.json|.resx|.sln".Contains(fileInfo.Extension))
+                        if (".asax|.cs|.cshtml|.csproj|.config|.ini|.json|.resx|.sln".Contains(fileInfo.Extension))
                         {
                             string text = File.ReadAllText(fileInfo.FullName);
                             text = text.Replace(from, to);
