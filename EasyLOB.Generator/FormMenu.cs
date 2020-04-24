@@ -31,7 +31,7 @@ namespace EasyLOB.Generator
 
         #region Properties
 
-        string exeName = "EasyLOB Core Generator";
+        string exeName = "EasyLOB Generator";
 
         string exePath = Application.ExecutablePath;
 
